@@ -1,0 +1,9 @@
+steps:
+- bash: |
+  cat <<EOF > owaspzap/helpers.js
+
+  # Copy the script (scripts/helpers.js)
+
+  EOF
+
+displayName: 'Add Handlebarsjs Helpers'

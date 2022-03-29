@@ -1,0 +1,5 @@
+steps:
+- bash: | 
+ 'hbs-commandline owaspzap/report.json $(System.DefaultWorkingDirectory)/owaspzap/helpers.js < owaspzap/nunit-template.hbs > owaspzap/test-results.xml'
+  displayName: 'Generate NUnit type file'
+displayName: 'Generate NUnit type file'

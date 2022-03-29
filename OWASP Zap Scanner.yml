@@ -1,0 +1,12 @@
+variables:
+  ZAP_URL_FOR_CRAWING: 'https://yourwebsite.com'
+
+steps:
+- task: CSE-DevOps.zap-scanner.custom-build-release-task.owaspzap@1
+  displayName: 'ZAP Scanner'
+  inputs:
+    aggressivemode: true
+    threshold: 200
+    scantype: targetedScan
+    url: '$(ZAP_URL_FOR_CRAWING)'
+    port: 443

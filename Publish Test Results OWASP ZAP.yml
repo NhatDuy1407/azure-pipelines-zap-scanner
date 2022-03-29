@@ -1,0 +1,8 @@
+steps:
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results OWASP ZAP'
+  inputs:
+    testResultsFormat: NUnit
+    testResultsFiles: 'owaspzap/test-results.xml'
+    failTaskOnFailedTests: true
+    testRunTitle: 'Zap Test'

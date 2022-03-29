@@ -1,0 +1,9 @@
+steps:
+- bash: |
+    cat <<EOF > owaspzap/nunit-template.hbs
+
+    # Copy the script (scripts/nunit-template.hbs)
+
+    EOF
+
+displayName: Create NUnit Template

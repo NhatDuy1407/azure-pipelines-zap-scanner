@@ -1,0 +1,5 @@
+steps:
+- bash: |
+  # using handlebarsjs to build the template
+  sudo npm install -g hbs-commandline@latest
+displayName: 'Install Handlebars Commandline Tool'
